@@ -50,3 +50,6 @@ public class ArrayParam {
 * protected : 같은 패키지(폴더)의 객체, 상속 관계의 객체 허용
 * default : 같은 패키지(폴더)의 객체 허용
 * private : 현재의 객체 안에서만 허용
+
+
+소수 다시 보고 이차원 클론 정리. 클래스 정리
