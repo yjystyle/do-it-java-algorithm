@@ -21,7 +21,7 @@ public class CloneArray {
 * 여기서 배열 변수 b는 a가 참조하는 배열 본체의 복제를 참조한다.
 <br>
 
-### 참조처를 복사
+### 참조처를 복사 (Aliasing)
 ```
 public class ArrayParam {
     public static void main(String[] args) {
