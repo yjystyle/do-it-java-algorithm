@@ -12,10 +12,14 @@ public class CloneArray {
         int[] b = a.clone();
 
         b[3] = 0;
-   
-
+        int[] c = new int[5];
+        System.arraycopy(a, 0, c, 0, a.length);
+        c[1] = 10;
         System.out.println(Arrays.toString(a));
         System.out.println(Arrays.toString(b));
+        System.out.println(Arrays.toString(c));
+        
+
     }
 
     

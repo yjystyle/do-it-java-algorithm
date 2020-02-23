@@ -20,9 +20,9 @@ public class Q16 {
                System.out.print("*"); 
             }
 
-            for(int  j=n-i; j>0; j--){
-                System.out.print(" ");
-            }
+            // for(int  j=n-i; j>0; j--){
+            //     System.out.print(" ");
+            // }
             System.out.println();
         }
     }

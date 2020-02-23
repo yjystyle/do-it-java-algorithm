@@ -71,7 +71,7 @@ public class PhysicalExamination {
         System.out.println("이름    키    시력");
         System.out.println("------------------");
         for (int i = 0; i <x.length; i++){
-            System.out.printf("%-8s%3d%5.1f\n", x[i].name, x[i].height, x[i].vision);
+            System.out.printf("%-8s%3d%5.2f\n", x[i].name, x[i].height, x[i].vision);
         }
         
         System.out.printf("\n평균 키 : %5.1fcm\n", aveHeight(x));
