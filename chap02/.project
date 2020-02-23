@@ -1,19 +1,6 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="UTF-8"?>
-<projectDescription>
-	<name>chap03</name>
-	<comment></comment>
-	<projects>
-	</projects>
-	<buildSpec>
-	</buildSpec>
-	<natures>
-	</natures>
-</projectDescription>
-=======
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <projectDescription>
-  <name>chap03</name>
+  <name>chap02</name>
   <comment/>
   <projects>&#xD;
     </projects>
@@ -28,4 +15,3 @@
     <nature>org.eclipse.jdt.core.javanature</nature>
   </natures>
 </projectDescription>
->>>>>>> 3cf6695e404c1b1ec7a67b1a93692ca82baa4faf
