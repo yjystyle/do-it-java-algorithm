@@ -18,7 +18,7 @@ public class Pbh {
     static int[][] rotateWithAngle(int[][] source, int arrLength, int angle) throws Exception {
 
         int loopCount = 0;
-        switch(angle){
+        switch(angle){ 
             case 90: loopCount = 1; break;
             case 180: loopCount = 2; break;
             case 270: loopCount = 3; break;
