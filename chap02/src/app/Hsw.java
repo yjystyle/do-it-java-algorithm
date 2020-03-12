@@ -11,7 +11,7 @@ class Hsw {
 
       bingo = makeBingo();
 
-      RotationBingo(bingo);
+      // RotationBingo(bingo);
       FindEngWord(bingo);
 
    }
@@ -23,7 +23,7 @@ class Hsw {
 
       char[][] tempArray = { { 'C', 'A', 'R', 'F', 'G', 'W', 'Q', 'O', }, { 'H', 'D', 'E', 'N', 'D', 'E', 'Q', 'C' },
             { 'C', 'V', 'Q', 'A', 'K', 'B', 'R', 'T' }, { 'S', 'Q', 'D', 'C', 'L', 'K', 'Q', 'S' },
-            { 'B', 'T', 'b', 'b', 'I', 'b', 'T', 'P' }, { 'E', 'B', 'Y', 'R', 'M', 'U', 'I', 'O' },
+            { 'B', 'T', 'B', 'B', 'I', 'B', 'T', 'P' }, { 'E', 'B', 'Y', 'R', 'M', 'U', 'I', 'O' },
             { 'P', 'K', 'Y', 'T', 'D', 'Q', 'C', 'V' }, { 'B', 'N', 'U', 'Y', 'B', 'E', 'W', 'X' },
             { 'N', 'U', 'R', 'T', 'C', 'E', 'K', 'B' }, };
 
@@ -59,8 +59,9 @@ class Hsw {
          char[] trgtArrRow = arr[i].clone();
          for (int j = 0; j < arr[i].length; j++) {
             // 범위 설정
-               if ((i==oX || i==oX+sX-1) && (j>=oY && j<=oY+sY-1)||(i>=oY && i<=oX+sX-1) && (j==oY|| j==oY+sY-1)){
-                  trgtArrRow[j] = arr[6 - j][i + d];
+            if ((i == oX || i == oX + sX - 1) && (j >= oY && j <= oY + sY - 1)
+                  || (i >= oY && i <= oX + sX - 1) && (j == oY || j == oY + sY - 1)) {
+               trgtArrRow[j] = arr[6 - j][i + d];
             }
          }
          // 넣어준다.
@@ -81,6 +82,37 @@ class Hsw {
    }
 
    static void FindEngWord(char[][] arr) {
+
+      // 열
+      int n = 8;
+      // 행
+      int m = 9;
+
+      for (int i = 0; i < arr.length; i++) {
+
+         char[][] daegaksun = new char[n+ m -1][];
+         int count = 0;
+         if (i == 0) {
+            for (int j = 0; j < arr[i].length; j++) {
+               // 대각선 행렬
+               // int[][] tmp = new int[16][];
+               char[] tmp2 = new char[j + 1];
+               for (int k = 0; k <= j; k++) {
+                  tmp2[k] = arr[k][j - k];
+               }
+               // System.out.println(Arrays.toString(tmp2));
+               // 넘어가자.
+               
+            }
+         } else {
+            int j = 7;
+            char[] tmp2 = new char[j + 1];
+            for (int k = 0; k <= j; k++) {
+               tmp2[k] = arr[k][j - k];
+            }
+
+         }
+      }
 
       /***
        * 정답란
