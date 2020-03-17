@@ -75,10 +75,6 @@ class Hsw {
          System.out.println();
       }
 
-      /***
-       * 정답란
-       */
-
    }
 
    static void FindEngWord(char[][] arr) {
